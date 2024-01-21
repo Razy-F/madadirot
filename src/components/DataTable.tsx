@@ -5,8 +5,11 @@ import { IBroker } from "@/lib/database/models";
 import { areasCounter } from "@/lib/database/helperFunctions";
 
 const DataTable = async () => {
-    const brokers:(IBroker[]|undefined) = await getBrokers();
-    const areasCount:(string|number)[] = areasCounter(brokers) 
+    const brokers:(IBroker[] | undefined) = await getBrokers();
+    console.log('this is brokers');
+    console.log(brokers)    
+    let areasCount:([string, number][]) = areasCounter(brokers) 
+    console.log(areasCount)    
         
   return (
     <ContentWrapper>
@@ -24,7 +27,7 @@ const DataTable = async () => {
           </thead>
           <tbody>
             {
-                areasCount.map((areas, i) => (
+              areasCount.length>0 && areasCount?.map((areas, i) => (
                     <tr className="bg-[#F2F2F2] border-b border-[#37495714]" key={i}>
                     <th
                         scope="row"

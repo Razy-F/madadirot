@@ -41,9 +41,9 @@ export const chartoptions = {
     },
   };
   
-  export const chartSettings = async () => {
+/*   export const chartSettings = async () => {
 
-    const brokers:IBroker[] = await getBrokers();  
+    const brokers:((IBroker[] | undefined)) = await getBrokers();  
     console.log(brokers)
     const labels = areasArray(brokers);
       const data = {
@@ -60,7 +60,7 @@ export const chartoptions = {
       };
 
       return data
-  }  
+  }   */
 
 
 

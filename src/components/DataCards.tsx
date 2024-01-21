@@ -15,7 +15,7 @@ const DataCards = async () => {
       </div>
       <div>
         <span className="text-lg block tracking-tighter">
-          City's Monthly Broker Rise
+          {"City's Monthly Broker Rise"}
         </span>
         <div className="flex space-s-2">
           <span>Brokers Added</span>

@@ -1,7 +1,7 @@
 import mongoose, { Document, model, models } from "mongoose";
 
-export interface IBroker extends Document {
-    "_id": number,
+export interface IBroker extends Document {    
+    _id: string,
     'מס רשיון':number;
     'שם המתווך':string;
     "עיר מגורים":string;

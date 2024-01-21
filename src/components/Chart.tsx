@@ -11,7 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { ContentWrapper } from "."
-import { chartSettings, chartoptions } from '@/lib/database/data';
+import {  chartoptions } from '@/lib/database/data';
 
 
 ChartJS.register(
@@ -26,8 +26,9 @@ ChartJS.register(
 
 export default function Chart() {
   return (
-    <ContentWrapper>
+    <h1>Chart</h1>
+   /*  <ContentWrapper>
         <Line options={chartoptions} data={chartSettings} />
-    </ContentWrapper>
+    </ContentWrapper> */
   )
 }
